@@ -1,0 +1,137 @@
+:root {
+    --clr-cyan-500: hsl(185, 75%, 39%);
+    --clr-blue-300: hsl(229, 23%, 23%);
+    --clr-blue-100: hsl(227, 10%, 46%);
+    --clr-gray-300: hsl(0, 0%, 59%);
+    --clr-gray-100: #e7e7e7;
+    --clr-white: #fff;
+
+    --font-sans: "Kumbh Sans", sans-serif;
+    --font-normal: 400;
+    --font-bold: 700;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+.main__container {
+    position: relative;
+    min-height: 100vh;
+    padding-top: clamp(9.1875rem, 8vw + 4rem, 10.8125rem);
+    padding-bottom: clamp(9.125rem, 8vw + 4rem, 10.8125rem);
+    background-color: var(--clr-cyan-500);
+    font-family: var(--font-sans);
+    overflow: hidden;
+}
+
+.main__container--pattern-top {
+    pointer-events: none;
+    position: absolute;
+    top: -31.875rem;
+    left: -17.8125rem;
+    z-index: 1;
+}
+.main__container--pattern-bottom {
+    pointer-events: none;
+    bottom: -39.375rem;
+    right: -14.5625rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.main__container h1 {
+    position: absolute;
+    opacity: 0;
+}
+
+.profile {
+    position: relative;
+    overflow: hidden;
+    z-index: 999;
+    border-radius: 0.875rem;
+    background-color: var(--clr-white);
+    color: var(--clr-blue-100);
+    margin: 0 auto;
+    width: min(100vw - 3.125rem, 21.875rem);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.profile__image {
+    height: 8.75rem;
+    object-fit: cover;
+}
+
+.profile__avatar {
+    width: 6.625rem;
+    height: 6.625rem;
+    border-radius: 9999px;
+    border: 5px solid var(--clr-white);
+    margin-top: -3.4375rem;
+    margin-bottom: 1.3125rem;
+}
+
+.profile__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile__person {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.8125rem;
+}
+.profile__person__name {
+    color: var(--clr-blue-300);
+    font-size: 1.125rem;
+    margin-right: 0.5625rem;
+}
+.profile__from {
+    margin-bottom: 1.625rem;
+    font-size: 0.875rem;
+}
+
+.profile__social__list {
+    width: 100%;
+    padding: 1.625rem 1.625rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 1px solid var(--clr-gray-100);
+    text-align: center;
+}
+.profile__social__item:first-child {
+    margin-right: -1px;
+}
+
+.profile__social__item--stat {
+    font-size: 1.125rem;
+    font-weight: var(--font-bold);
+    color: var(--clr-blue-300);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.5rem;
+}
+
+.profile__social__item--description {
+    font-size: 0.625rem;
+    letter-spacing: 0.15em;
+}

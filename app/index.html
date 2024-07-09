@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+
+    <title>Frontend Mentor | Profile card component</title>
+  </head>
+  <body>
+    <main class="main__container">
+      <img
+        class="main__container--pattern-top"
+        src="./assets/images/bg-pattern-top.svg"
+        alt="Background top pattern"
+      />
+      <img
+        class="main__container--pattern-bottom"
+        src="./assets/images/bg-pattern-bottom.svg"
+        alt="Background bottom pattern"
+      />
+      <h1>Profile card component</h1>
+      <div class="profile">
+        <img
+          class="profile__image"
+          src="./assets/images/bg-pattern-card.svg"
+          alt="Background card image"
+        />
+        <div class="profile__content">
+          <img
+            class="profile__avatar"
+            src="./assets/images/image-victor.jpg"
+            alt="Victor Crest avatar"
+          />
+          <div class="profile__person">
+            <h2 class="profile__person__name">Victor Crest</h2>
+            <p class="profile__person__age">26</p>
+          </div>
+          <p class="profile__from">London</p>
+          <ul class="profile__social__list">
+            <li class="profile__social__item">
+              <p class="profile__social__item--stat">80k</p>
+              <p class="profile__social__item--description">Followers</p>
+            </li>
+            <li class="profile__social__item">
+              <p class="profile__social__item--stat">803k</p>
+              <p class="profile__social__item--description">Likes</p>
+            </li>
+            <li class="profile__social__item">
+              <p class="profile__social__item--stat">1.4k</p>
+              <p class="profile__social__item--description">Photos</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
