@@ -1,3 +1,19 @@
+@font-face {
+    font-display: swap;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./assets/fonts/kumbh-sans-v26-latin-regular.woff2") format("woff2"),
+        url("./assets/fonts/kumbh-sans-v26-latin-regular.ttf") format("truetype");
+}
+@font-face {
+    font-display: swap;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./assets/fonts/kumbh-sans-v26-latin-700.woff2") format("woff2"),
+        url("./assets/fonts/kumbh-sans-v26-latin-700.ttf") format("truetype");
+}
 :root {
     --clr-cyan-500: hsl(185, 75%, 39%);
     --clr-blue-300: hsl(229, 23%, 23%);
@@ -69,8 +85,8 @@ h6 {
     color: var(--clr-blue-100);
     margin: 0 auto;
     width: min(100vw - 3.125rem, 21.875rem);
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
-        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .profile__image {
