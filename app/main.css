@@ -49,8 +49,6 @@ body {
 main {
     position: relative;
     min-height: 100vh;
-    padding-top: clamp(9.1875rem, 8vw + 4rem, 10.8125rem);
-    padding-bottom: clamp(9.125rem, 8vw + 4rem, 10.8125rem);
     padding: 1.5rem;
     background-color: var(--clr-cyan-500);
     font-family: var(--font-sans);
