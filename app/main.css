@@ -115,7 +115,7 @@ h6 {
     font-size: 1.125rem;
     margin-bottom: 0.8125rem;
 }
-.profile__person__name {
+.profile__name {
     color: var(--clr-blue-300);
     font-size: 1.125rem;
     margin-right: 0.5625rem;
@@ -125,7 +125,7 @@ h6 {
     font-size: 0.875rem;
 }
 
-.profile__social__list {
+.profile-stat__list {
     width: 100%;
     padding: 1.625rem 1.625rem;
     list-style: none;
@@ -134,11 +134,11 @@ h6 {
     border-top: 1px solid var(--clr-gray-100);
     text-align: center;
 }
-.profile__social__item:first-child {
+.profile-stat__item:first-child {
     margin-right: -1px;
 }
 
-.profile__social__item--stat {
+.profile-stat__value {
     font-size: 1.125rem;
     font-weight: var(--font-bold);
     color: var(--clr-blue-300);
@@ -147,7 +147,7 @@ h6 {
     margin-bottom: 0.5rem;
 }
 
-.profile__social__item--description {
+.profile-stat__description {
     font-size: 0.625rem;
     letter-spacing: 0.15em;
 }
